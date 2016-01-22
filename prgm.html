@@ -4,20 +4,20 @@
     <title>Program</title>
   </head>
   <script>
-    var a=Number(prompt("Enter the value of a"));
-    function foo(a)
+    (function foo()
     {
+      var a=Number(prompt("Enter the value of a"));
       b=Number(prompt("Enter the value of b"));
       c = b*temp(a)
       function temp(c){
         return c*c;
       }
-    }
-    foo(a);
-    document.write(a);
-    document.write("\n");
-    document.write(b);
-    document.write("\n");
-    document.write(c);
+      document.write(a);
+      document.write("\n");
+      document.write(b);
+      document.write("\n");
+      document.write(c);
+    })();
+
   </script>
 </heaD>
